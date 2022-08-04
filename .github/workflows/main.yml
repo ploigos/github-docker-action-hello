@@ -7,8 +7,8 @@ jobs:
     runs-on: [self-hosted, docker]
     name: A job to say hello
     steps:
-      - name: Raw podman command
-        run: podman run -v "/opt/runner/env.sh":"/github/home/env.sh" hello-world
+      #- name: Raw podman command
+      #  run: podman run -v "/opt/runner/env.sh":"/github/home/env.sh" hello-world
       - name: Hello world action step
         id: hello
         uses: actions/hello-world-docker-action@v1
